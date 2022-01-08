@@ -1,0 +1,95 @@
+body{
+    margin: 0px;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("pexels-salomon-v-6442024.jpg");
+    background-size: cover;
+    position: absolute;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-blend-mode: screen;
+}
+.lock{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+    position: fixed;
+    width: 100%;
+    transform: scale(2);
+}
+
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+
+.btncontainer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3 , 70px);
+    top: 300px;
+    position: relative;
+    transition: all .6s ease;
+}
+button{
+    width: 70px;
+    height: 70px;
+    border: transparent;
+    color: white;
+    background-color: black;
+    font-size: 35px;
+    font-family: sans-serif;
+    transition: all .8s ease;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+
+button:hover{
+    background-color: transparent; 
+    border: none;   
+    color: crimson;
+}
+
+.screen input{
+    width: 210px;
+    height: 30px;
+    border : none;
+    background: transparent;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    /* display: none; */
+}
+
+input:hover{
+    color: coral;
+    border: none;
+}
+
+/* .screen.active input{
+    display: flex;
+} */
+.message{
+    display: none;
+}
+
+.message.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    bottom: 70px;
+}
+
